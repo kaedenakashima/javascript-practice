@@ -1,6 +1,7 @@
 # javascript-practice
 <ul>
   <li>
+    <b>Basic JS</b><br>
     <b>JS basics for beginners</b><br>
      <ul>
        <li>Master the Fundamentals in 6 Hours</li>
@@ -11,7 +12,8 @@
       
   </li>
   <li>
-    <b>Javascript30 JavaScript30.com</b>
+    <b>Vanilla JS</b><br>
+    <b>Javascript30</b>
     <ul>
       <li>A free 30 day vanilla js coding challenge.</li>
       <li>Learn to build Build 30 things in 30 days with 30 tutorials.</li>
@@ -20,9 +22,13 @@
   </li>
 </ul>
   
-<h2>React.js Practices</h2>
+
   <ul>
-    <li><b>React Complete Guide App</b><br>
-      Person Manager <a href="https://bit.ly/32RdjaB">DEMO</a><br><br>
+    <li>
+      <b>React JS</b><br>
+      <b>React Complete Guide App</b><br>
+      Person Manager <a href="https://bit.ly/2RI9i6u">(DEMO)</a><br>
+      Burger App <a href="https://bit.ly/2Pangfo">(DEMO)</a><br>
+      Post App <a href="https://bit.ly/2RHqkRS">(DEMO)</a>
     </li>
   </ul>
