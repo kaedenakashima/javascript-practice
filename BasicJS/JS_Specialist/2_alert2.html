@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>window.onload function</title>
+    <script>
+        window.onload = function() {
+            document.getElementById('myButton').addEventListener('click', respond);
+        }//this cunction won't run untill all of the page get loaded.
+
+        window.onclick = function() {
+            alert("Thanks for clicking the window.")
+        }
+        
+        function respond(e) {
+            alert("You clicked the button.");
+        }
+    </script>
+</head>
+<body>
+    <button id="myButton">Click here!</button>
+</body>
+</html>

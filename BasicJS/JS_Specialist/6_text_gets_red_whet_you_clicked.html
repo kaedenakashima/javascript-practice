@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>getElementById</title>
+    <script>
+        window.onload = function() {
+            document.getElementById('content').addEventListener('click', respond);
+            document.getElementById('one').addEventListener('click', respondOne);
+            document.getElementById('two').addEventListener('click', respondTwo);
+        }
+            
+                
+        function respondTwo(e) {
+            console.log("You clicked two");
+        }
+
+        function respondOne(e) {
+            console.log("You clicked one");
+        }
+
+        function respond(e) {
+            console.log("You clicked content");
+            document.getElementById('content').style.color = "red";
+        }
+    </script>
+</head>
+<body>
+    <div id="content">
+        <p id="one">This is sentence one.</p>
+        <p id="two">This is sentence two.</p>
+    </div>
+    
+    
+</body>
+</html>

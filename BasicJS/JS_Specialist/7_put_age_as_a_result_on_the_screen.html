@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Variables</title>
+    <script>
+        var age; //Public or script scope
+    window.onload = function() {
+        var score;//Declaration(Function scope)
+        score = 1000; //Initialize
+        age = 27; //Combined declaration and initialization
+        out();
+    }
+    function out() {
+        document.getElementById('result').innerHTML = "Age: " + age;
+    }
+    </script>
+</head>
+<body>
+    <div id="result"></div>
+    
+</body>
+</html>

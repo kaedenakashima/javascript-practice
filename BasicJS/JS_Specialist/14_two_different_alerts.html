@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>If..else</title>
+    <script>
+    window.onload = function() {
+       document.getElementById('btnOne').addEventListener('click', btnClicked);
+       document.getElementById('btnTwo').addEventListener('click', btnClicked);
+    }
+    function btnClicked(e) {
+        console.log(e.target.id);
+        if(e.target.id =="btnOne") {
+            alert("You pushed Button One!");
+        } else {
+            alert("You pushed Button Two!");
+        }
+    }
+    </script>
+</head>
+<body>
+    <div id="result">
+        <button id="btnOne">One</button>
+        <button id="btnTwo">Two</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>The quick brown fox jumped over the lazy dogs</h1>
+    <div id="myButton">Click Me</div>
+    <!-- <button onclick="alert('Thanks for clicking');">Click here!</button> -->
+<script>
+window.onload = function() {
+    document.getElementById('myButton').addEventListener('click', respond);
+}
+function respond(e) {
+    alert("Thanks for clicking!");
+}
+
+    
+</script>
+</body>
+</html>

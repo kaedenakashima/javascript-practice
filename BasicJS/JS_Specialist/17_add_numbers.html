@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>While Loops</title>
+    <script>
+    window.onload = function() {
+        var counter = 1000;
+
+        //print out 10000 to 10 (subtracted 10 by each)
+        while(counter > 0) {
+            document.getElementById('result').innerHTML += "<br/>" + counter;
+            counter = counter - 10;
+        }
+
+        //counting 1 to 100 (added 1 by each)
+        while (counter < 101) {
+            //Do this stuff
+            document.getElementById('result').innerHTML += "<br/>" + counter;
+            counter++;
+        } 
+    }
+    </script>
+</head>
+<body>
+    <div id="result"></div>
+</body>
+</html>
