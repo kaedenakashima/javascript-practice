@@ -6,7 +6,7 @@
      <ul>
        <li>Master the Fundamentals in 6 Hours</li>
        <li>Including 30 exercises and challenges with solutions.</li>
-       <li>You can take the course from <a href="https://www.udemy.com/course/javascript-basics-for-beginners/" >here</a><br><br>
+       <li>You can take the course from <a href="https://www.udemy.com/course/javascript-basics-for-beginners/" >here</a><br>
           #1 Sound Function <a href="https://bit.ly/36sekb8">(DEMO)</a><br>
           #2 Clock Function <a href="https://bit.ly/36IJHP5">(DEMO)</a><br>
        </li>
@@ -35,7 +35,7 @@
       <b>React Complete Guide App</b><br>
       <ul>
         <li>45 hours tutorial to learn reactJS<br></li>
-        <li>Learn how to write code in react, Hooks, Redux, CSSmodule, Style Components, React Routing, Animations, Next.js, and so many other things!<br><br>
+        <li>Learn how to write code in react, Hooks, Redux, CSSmodule, Style Components, React Routing, Animations, Next.js, and so many other things!<br>
         Person Manager <a href="https://bit.ly/2RI9i6u">(DEMO)</a><br>
         Burger App <a href="https://bit.ly/2Pangfo">(DEMO)</a><br>
         Post App <a href="https://bit.ly/2RHqkRS">(DEMO)</a>
