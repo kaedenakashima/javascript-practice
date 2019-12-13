@@ -1,18 +1,24 @@
 # javascript-practice
 <ul>
   <li>
-    <b>Basic JS</b><br>
+    <b>Basic JS 🌎</b><br>
     <b>JS basics for beginners</b><br>
      <ul>
        <li>Master the Fundamentals in 6 Hours</li>
        <li>Including 30 exercises and challenges with solutions.</li>
-       <li>You can take the course from <a href="https://www.udemy.com/course/javascript-basics-for-beginners/" >here</a></li>
+       <li>You can take the course from <a href="https://www.udemy.com/course/javascript-basics-for-beginners/" >here</a><br><br>
+          #1 Sound Function <a href="https://bit.ly/36sekb8">(DEMO)</a><br>
+          #2 Clock Function <a href="https://bit.ly/36IJHP5">(DEMO)</a><br>
+       </li>
      <br>
      </ul>
-      
   </li>
+</ul>
+      
+ 
+<ul>
   <li>
-    <b>Vanilla JS</b><br>
+    <b>Vanilla JS 🦄</b><br>
     <b>Javascript30</b>
     <ul>
       <li>A free 30 day vanilla js coding challenge.</li>
@@ -25,10 +31,15 @@
 
   <ul>
     <li>
-      <b>React JS</b><br>
+      <b>React JS 🤘🏼</b><br>
       <b>React Complete Guide App</b><br>
-      Person Manager <a href="https://bit.ly/2RI9i6u">(DEMO)</a><br>
-      Burger App <a href="https://bit.ly/2Pangfo">(DEMO)</a><br>
-      Post App <a href="https://bit.ly/2RHqkRS">(DEMO)</a>
-    </li>
+      <ul>
+        <li>45 hours tutorial to learn reactJS<br></li>
+        <li>Learn how to write code in react, Hooks, Redux, CSSmodule, Style Components, React Routing, Animations, Next.js, and so many other things!<br><br>
+        Person Manager <a href="https://bit.ly/2RI9i6u">(DEMO)</a><br>
+        Burger App <a href="https://bit.ly/2Pangfo">(DEMO)</a><br>
+        Post App <a href="https://bit.ly/2RHqkRS">(DEMO)</a>
+        </li>
+      </ul>
+      </li>
   </ul>
