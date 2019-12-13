@@ -26,7 +26,7 @@
       <li>You can take the course from <a href="https://javascript30.com/" >here</a></li>
     </ul>
   </li>
-</ul>
+</ul><br>
   
 
   <ul>
