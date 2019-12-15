@@ -6,9 +6,7 @@
      <ul>
        <li>Master the Fundamentals in 6 Hours</li>
        <li>Including 30 exercises and challenges with solutions.</li>
-       <li>You can take the course from <a href="https://www.udemy.com/course/javascript-basics-for-beginners/" >here</a><br>
-          #1 Sound Function <a href="https://bit.ly/36sekb8">(DEMO)</a><br>
-          #2 Clock Function <a href="https://bit.ly/36IJHP5">(DEMO)</a><br>
+       <li>You can take the course from <a href="https://www.udemy.com/course/javascript-basics-for-beginners/" >here</a>
        </li>
      <br>
      </ul>
@@ -23,7 +21,11 @@
     <ul>
       <li>A free 30 day vanilla js coding challenge.</li>
       <li>Learn to build Build 30 things in 30 days with 30 tutorials.</li>
-      <li>You can take the course from <a href="https://javascript30.com/" >here</a></li>
+      <li>You can take the course from <a href="https://javascript30.com/" >here</a><br>
+          #1 Sound Function <a href="https://bit.ly/36sekb8">(DEMO)</a><br>
+          #2 Clock Function <a href="https://bit.ly/36IJHP5">(DEMO)</a><br>
+          #3 Update CSS Variables with JS <a href="https://bit.ly/2rR8qSd">(DEMO)</a><br>
+      </li>
     </ul>
   </li>
 </ul><br>
