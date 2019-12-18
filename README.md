@@ -38,7 +38,7 @@
       <ul>
         <li>36 hours tutorial to learn Gatsby JS<br></li>
         <li>Learn how to write code in React, GraphQL, style Components, gatsby extensions.<br>
-        Get strarted <a href="https://bit.ly/2M2hjPV">(DEMO)</a><br>
+        Vacation Guide <a href="https://bit.ly/2M2hjPV">(DEMO)</a><br>
         </li>
       </ul>
       </li>
