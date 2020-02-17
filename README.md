@@ -1,4 +1,4 @@
-# javascript-practice
+# javascript-practice-roadmap
 <ul>
   <li>
     <b>Basic JS 🌎</b><br>
@@ -49,6 +49,11 @@
   <ul>
     <li>
       <b>React JS 🤘🏼</b><br>
+      <b>Understanding & Creating Components</b><br>
+      <ul>
+        <li>Series from <a href="https://www.leveluptutorials.com/">Levelup tutorial</a> to understand basic codes that are using in react.<br>
+        </li>
+      </ul>
       <b>React Complete Guide App</b><br>
       <ul>
         <li>45 hours tutorial to learn reactJS<br></li>
