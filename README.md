@@ -58,8 +58,7 @@
         </li>
       </ul>
       </li>
-      </ul><br>
-      <b>React Complete Guide App</b><br>
+            <b>React Complete Guide App</b><br>
       <ul>
         <li>45 hours tutorial to learn reactJS<br></li>
         <li>Learn how to write code in react, Hooks, Redux, CSSmodule, Style Components, React Routing, Animations, Next.js, and so many other things!<br>
@@ -70,6 +69,8 @@
       </ul>
       </li>
     </ul>
+      </ul><br>
+
     
   
    
