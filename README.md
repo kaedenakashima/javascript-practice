@@ -51,17 +51,14 @@
       <b>React JS 🤘🏼</b><br>
       <b>Understanding & Creating Components</b><br>
       <ul>
-        <li>tutorial site for learn React<br></li>
+        <li>Series from <a href="https://www.leveluptutorials.com/">Levelup tutorial</a> to understand basic codes that are using in react.<br>
+        </li>
         <li>In pro mode, you can learn React, Apollo, Gatsby, GraphQL and so on<br>
         Movie Database<a href="https://moviedatabase-12748516.netlify.com/">(DEMO)</a><br>
         </li>
       </ul>
       </li>
       </ul><br>
-      <ul>
-        <li>Series from <a href="https://www.leveluptutorials.com/">Levelup tutorial</a> to understand basic codes that are using in react.<br>
-        </li>
-      </ul>
       <b>React Complete Guide App</b><br>
       <ul>
         <li>45 hours tutorial to learn reactJS<br></li>
