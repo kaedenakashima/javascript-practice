@@ -52,13 +52,11 @@
       <b>Understanding & Creating Components</b><br>
       <ul>
         <li>Series from <a href="https://www.leveluptutorials.com/">Levelup tutorial</a> to understand basic codes that are using in react.<br>
-          <li>react spring sample<a href="https://react-animation-starter-f516f2.netlify.com/">(DEMO)</a></li>
-         <li>react hooks sample<a href="https://levekl-up-dishes-a47492.netlify.com/">(DEMO)</a></li>
-        </li>
+          react spring sample<a href="https://react-animation-starter-f516f2.netlify.com/">(DEMO)</a><br>
+          react hooks sample<a href="https://levekl-up-dishes-a47492.netlify.com/">(DEMO)</a><br>
         <li>In pro mode, you can learn React, Apollo, Gatsby, GraphQL and so on<br>
         Movie Database<a href="https://moviedatabase-12748516.netlify.com/">(DEMO)</a><br>
-        </li>
-        <li>Testing by using Jest <a href="https://github.com/kaedenakashima/react_movie_database_testing">See the code</a></li>
+        Testing by using Jest <a href="https://github.com/kaedenakashima/react_movie_database_testing">See the code</a><br></li>
       </ul>
       </li>
             <b>React Complete Guide App</b><br>
