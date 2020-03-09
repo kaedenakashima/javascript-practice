@@ -58,7 +58,7 @@
         <li>In pro mode, you can learn React, Apollo, Gatsby, GraphQL and so on<br>
         Movie Database<a href="https://moviedatabase-12748516.netlify.com/">(DEMO)</a><br>
         </li>
-        <li>Testing by using Jest<a href="https://github.com/kaedenakashima/react_movie_database_testing">See the code</a></li>
+        <li>Testing by using Jest <a href="https://github.com/kaedenakashima/react_movie_database_testing">See the code</a></li>
       </ul>
       </li>
             <b>React Complete Guide App</b><br>
