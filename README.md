@@ -30,6 +30,19 @@
   </li>
 </ul><br>
 
+<ul>
+  <li>
+    <b>Node JS 🦄</b><br>
+    <b>Filter functions</b>
+    <ul>
+      <li>
+          Filter name, price and type  <a href="https://github.com/kaedenakashima/node-christmas-inventory">see the code</a><br>
+          React ver. <a href="https://bit.ly/37mqz9U">(DEMO)</a><br>
+          Filter words <a href="https://node-dictionary-site.netlify.com">(DEMO)</a><br>
+      </li>
+    </ul>
+  </li>
+</ul><br>
 
 <ul>
     <li>
