@@ -32,7 +32,7 @@
 
 <ul>
   <li>
-    <b>Node JS 🦄</b><br>
+    <b>Node JS </b><br>
     <b>Filter functions</b>
     <ul>
       <li>
