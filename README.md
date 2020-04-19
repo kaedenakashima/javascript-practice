@@ -26,6 +26,10 @@
           #2 Clock Function <a href="https://bit.ly/36IJHP5">(DEMO)</a><br>
           #3 Update CSS Variables with JS <a href="https://bit.ly/2rR8qSd">(DEMO)</a><br>
       </li>
+    </ul><br>
+    <b>better Javascript</b>
+    <ul>
+      <li>bgColor generator<a href='https://basic-javascript-cardio-37914e.netlify.app/'>DEMO</a></li>
     </ul>
   </li>
 </ul><br>
