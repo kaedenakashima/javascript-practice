@@ -1,0 +1,265 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Levelup Tutorials Better Javascript Cardio 🔥💪</title>
+</head>
+
+<body  style='transition: 1s ease all;'>
+  <div id="app">
+  <p><em>Psst: have a look at the JavaScript Console</em>💁</p>
+  <h1 id='logo'>Company Logo</h1>
+  <button id="new-colors">New Colors</button>
+</div>
+</body>  
+<script>
+
+document.getElementById("app").appendChild = `
+<h1>Hello Vanilla!</h1>
+<div>
+  We use Parcel to bundle this sandbox, you can find more info about Parcel
+  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
+</div>
+`;
+
+
+//--------(9)JS & THE DOM PART3---------
+
+console.log("(9)JS & THE DOM PART3");
+// Generate random color
+// RGB 0-255
+// Apply to dom
+// update color on event
+
+const generateColorValue = () => Math.floor(Math.random() * 256);
+
+const createColor = () => {
+  const red = generateColorValue();
+  const green = generateColorValue();
+  const blue = generateColorValue();
+  return `rgb(${red}, ${green}, ${blue})`;
+};
+
+const applyColorToBody = color => {
+  return (document.body.style.backgroundColor = color);
+};
+
+const addRandomColorToBg = () => {
+  const color = createColor();
+  return applyColorToBody(color);
+};
+
+addRandomColorToBg();
+//--------(10)EVENTS ADDEVENTLISTNER VS EVENT METHODS---------x
+console.log("(10)EVENTS ADDEVENTLISTNER VS EVENT METHODS");
+
+const newColors = document.getElementById("#new-colors");
+//On clicks attach 1 event
+// newColors.onclick = () => addRandomColorToBg();
+// newColors.onclick = () => console.log("hi");
+
+document.addEventListener("click", addRandomColorToBg);
+document.addEventListener("click", () => console.log("changed color🌟"));
+
+
+//--------(8)INTERACTING WITH THE DOM---------
+console.log("(8)INTERACTING WITH THE DOM");
+
+const logo = document.querySelector("#logo");
+logo.innerText = "Yo!";
+
+//--------(7)JS & THE DOM + MDN DOCS---------
+console.log("(7)JS & THE DOM + MDN DOCS");
+const heading = document.createElement("h1");
+heading.innerHTML = "<span>Hello </span>" + document.URL;
+document.body.appendChild(heading);
+
+console.log(document.URL);
+
+//--------(6)BENEFITS OF SMALLER FUNCTIONS---------
+console.log("(6)BENEFITS OF SMALLER FUNCTIONS");
+const cart = ["10", "5", "15"];
+
+const SHIPPING_COST = 10;
+
+const fakeAPICharge = total => true;
+const fakeSendRecipt = total => true;
+
+const getSubTotal = cart => cart.reduce((tempTotal, item) => tempTotal + item);
+const getTotal = subTotal => subTotal + SHIPPING_COST;
+const sendRecipt = ({ email, total }) =>
+  fakeSendRecipt({
+    email,
+    total
+  });
+
+const checkout = cart => {
+  const subTotal = getSubTotal(cart);
+  const total = getTotal(subTotal);
+  const orderSuccess = fakeAPICharge(total);
+  if (orderSuccess) {
+    sendRecipt({
+      email: "fakeemail@gmail.com",
+      total
+    });
+  }
+  return orderSuccess;
+};
+
+checkout(cart);
+
+//--------(5)IMMUTABLE & PURE FUNCTIONS----------
+console.log("(5)IMMUTABLE & PURE FUNCTIONS");
+// Immutable vs Mutable
+// can't be changed vs can be changed
+// isn't changed vs changed
+const name2 = "Katie";
+const fullName2 = name2 + " Nakashima";
+console.log(fullName2);
+
+// Pure Function
+// Always retun the same thing, with the same input
+
+//pure
+const timesTwo = x => x * 2;
+console.log(timesTwo(2));
+console.log(timesTwo(2));
+
+// not pure
+let multi = 3;
+const timesMulti = x => x * multi;
+console.log("multi=3", timesMulti(2));
+multi = 4;
+console.log("multi=4", timesMulti(2));
+multi = 6;
+console.log("multi=6", timesMulti(2));
+
+let mult = 2; // External State
+const addFour = x => {
+  mult += 2;
+  return x + mult;
+};
+console.log("mult2(set Internal State as +2)", addFour(2));
+console.log("mult2(set Internal State as +2)", addFour(2));
+
+//--------(4)NAMING THINGS----------
+console.log("(4)NAMING THINGS");
+//Consistency is king
+//Clear, searchable & obvious
+const BASE_SALARY = 16000;
+const SALARY_MULTIPLIER = 4;
+//parameters
+const makePerson3 = ({ nickName, lastName, age, job }) => {
+  return {
+    name: nickName + " " + lastName,
+    age,
+    job,
+    salary: "$" + BASE_SALARY * SALARY_MULTIPLIER
+  };
+};
+//arguments
+const dev3 = makePerson3({
+  nickName: "Katie",
+  lastName: "Nakashima",
+  age: 27,
+  job: "Front End Dev"
+});
+
+// Do not do
+// const hireDev = ({devInfo]})=> {
+//   const hiredDevInfo = {
+//     hired: true,
+//     hired: true,
+//     ...devInfo
+//   }
+//   return hiredDevInfo
+// }
+
+//Correct
+const hireDev = ({ dev3 }) => {
+  const hiredDev = {
+    hired: true,
+    ...dev3
+  };
+  return hiredDev;
+};
+
+const ytd = 100000; //Sales year to date
+const salesYearToDate = 100000;
+
+console.log(hireDev({ dev3 }));
+
+//--------(3)NAMED PARAMETERS----------
+console.log('(3)NAMED PARAMETERS')
+//parameters
+const makePerson2 = ({ nickName, lastName, age, job }) => {
+  return {
+    name: nickName + " " + lastName,
+    age,
+    job,
+  };
+};
+//arguments
+const dev2 = makePerson2({
+  nickName: "Katie",
+  lastName: "Nakashima",
+  age: 27,
+  job: "Front End Dev"
+});
+console.log(dev2);
+//--------(2)DESTRUCTURING----------
+console.log('(2)DESTRUCTURING')
+const newArray = ["hello", "katie", "newItem", "spreadftw"];
+const [a, b, ...c] = newArray;
+// const a = newArray[0];
+// const b = newArray[1];
+// console.log(a);
+console.log(c);
+
+const person = {
+  name: "Katie",
+  age: 27,
+  job: "Front End Dev"
+};
+
+const makePerson = (name, age, job) => {
+  return {
+    name,
+    age,
+    job
+  };
+};
+const dev = makePerson("Katie", 27, "Front End Dev");
+// X const name = dev.name;
+// X const devName = dev.name;
+const { name, ...rest } = dev;
+//this.props.names
+//const {names} = this.props;
+//...this.props
+
+console.log(name, rest);
+
+//--------(1)FUNCTION----------
+console.log('(1)FUNCTION')
+//Function Declaration
+function sayHi() {
+  return console.log("hi");
+}
+sayHi();
+
+//Function Expression
+const sayHi2 = function() {
+  return console.log("hi2");
+};
+sayHi2();
+const sayHi3 = () => {
+  return console.log("hi3");
+};
+sayHi3();
+const sayHi4 = () => console.log("hi4");
+sayHi4();
+
+  </script>
+
+</html>
