@@ -22,46 +22,170 @@ document.getElementById("app").appendChild = `
   <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
 </div>
 `;
+//--------(14)JS AARRAY METHODS & MAP---------
+console.log("(14)JS ARRAY METHODS & MAP");
 
+const priceList = [900, 200, 250, 50, 60];
 
+const productList = [
+  {
+    sku: "1234",
+    price: 600,
+    type: "spring linen jacket"
+  },
+  {
+    sku: "12333334",
+    price: 60,
+    type: "round neck icon tshirt"
+  },
+  {
+    sku: "12111111134",
+    price: 300,
+    type: "striped shirt dress"
+  }
+];
+
+// .map - iterates over array, perform function on each returns new array
+
+// const springSalePrice = priceList.map(value => {
+//   return value * 0.7;
+// });
+//// To rewrite above the code :
+// const springSalePrice = priceList.map(value => value * 0.7);
+// console.log("springSalePrice", springSalePrice);
+
+const springSalePrice = productList.map(value => {
+  return {
+    ...value,
+    salePrice: value.price * 0.7
+  };
+});
+console.log("springSalePrice", springSalePrice);
+
+//--------(13)ASYNC AWAIT---------
+console.log("(13)ASYNC AWAIT");
+
+//Made up code
+//imported chargedCard
+const chargeCard2 = () => 
+  new Promise((resolve, reject) => {
+    // card is valid
+    // reject('fail!')
+    if(true) {
+      return resolve(true);
+    }
+    return reject(false);
+  });
+  const chargeCC = async ccNumber => {
+    try {
+      const res = await chargeCard2(ccNumber);
+      console.log(res);
+      return (res);
+    } catch(error) {
+      console.log(error);
+    }
+    chargeCard2(ccNumber)
+      .then(val => {
+        console.log(val);
+      })
+      .catch(err => {
+        console.log(err);
+      })
+  };
+
+// callback hell
+chargeCard2('12341234123', res => {
+  // time to do something
+  saveToDb(res, () => {
+    //time to do something else
+  });
+});
+//--------(12)WHAT ARE PROMISES?---------
+console.log("(12)WHAT ARE PROMISES?");
+
+// Made up code
+// imported chargedCard
+const chargeCard = () =>
+  new Promise((resolve, reject) => {
+    // card is valid
+    // reject('fail');
+  if (true) {
+    // return resolve(true)
+  }  
+  // retrun reject(false)
+});
+
+  chargeCard() 
+    .then(val => {
+      console.log(val);
+    })
+    .catch(err => {
+      console.log(err);
+    })
+
+//callback hell
+chargeCard('12341234123', res => {
+  // time to do something
+  saveToDb(res, () => {
+    // time to do something else
+  })
+});
+  
+//--------(9-11)BG COLOR GENERAATOR PROJECT---------
+console.log('(9-11)BG COLOR GENERAATOR PROJECT'+ '\n' + '(9)JS & THE DOM PART3'+ '\n' + '(10)EVENTS ADDEVENTLISTNER VS EVENT METHODS,' + '\n' + '(11)SETTIMEOUT & SETINTERVAL');
 //--------(9)JS & THE DOM PART3---------
-
-console.log("(9)JS & THE DOM PART3");
 // Generate random color
-// RGB 0-255
 // Apply to dom
-// update color on event
 
-const generateColorValue = () => Math.floor(Math.random() * 256);
+// step1 set the color random
+const randomColor = () => Math.floor(Math.random() * 256);
 
-const createColor = () => {
-  const red = generateColorValue();
-  const green = generateColorValue();
-  const blue = generateColorValue();
+// step2 set color for each RBG
+const makeColor = () => {
+  const red = randomColor();
+  const green = randomColor();
+  const blue = randomColor();
   return `rgb(${red}, ${green}, ${blue})`;
 };
 
-const applyColorToBody = color => {
+//step3 set css
+const css = color => {
   return (document.body.style.backgroundColor = color);
 };
 
-const addRandomColorToBg = () => {
-  const color = createColor();
-  return applyColorToBody(color);
+//step4 set color to css
+const bgColor = () => {
+  const color = makeColor();
+  return css(color);
 };
 
-addRandomColorToBg();
-//--------(10)EVENTS ADDEVENTLISTNER VS EVENT METHODS---------x
-console.log("(10)EVENTS ADDEVENTLISTNER VS EVENT METHODS");
+//step5 action(if you reflesh your browser, bgColor will change)
+bgColor();
 
-const newColors = document.getElementById("#new-colors");
-//On clicks attach 1 event
-// newColors.onclick = () => addRandomColorToBg();
-// newColors.onclick = () => console.log("hi");
+//--------(10)EVENTS ADDEVENTLISTNER VS EVENT METHODS---------
 
-document.addEventListener("click", addRandomColorToBg);
-document.addEventListener("click", () => console.log("changed color🌟"));
+// step6 set bg to id at button tag
+const btn = document.getElementById("new-colors");
 
+// step7 set click button
+// On click attach 1 event
+//btn.onclick = () => bgColor();
+// btn.onclick = () => console.log("hi");
+
+btn.addEventListener("click", bgColor);
+btn.addEventListener("click", () => console.log("changed color🌟"));
+
+//--------(11)SETTIMEOUT & SETINTERVAL---------
+  
+// Set Timeout vs Set Interval
+// Set Timeout - happens once
+const log = () => console.log("is in timeOut");
+// setTimeout(log(), 1000);
+// setTimeout(bgColor, 5000); // every 5s
+
+// Set Interval - happens over and over
+const interval = setInterval(bgColor, 2000); // every 2s
+btn.addEventListener("click", () => clearInterval(interval));
 
 //--------(8)INTERACTING WITH THE DOM---------
 console.log("(8)INTERACTING WITH THE DOM");
