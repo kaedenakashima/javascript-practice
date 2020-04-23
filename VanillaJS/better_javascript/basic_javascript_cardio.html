@@ -22,8 +22,9 @@ document.getElementById("app").appendChild = `
   <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
 </div>
 `;
+//--------(15,16)SHOOPING DISCOUNT PROJECT---------
+console.log('(15, 16)SHOOPING DISCOUNT PROJECT'+ '\n' + '(14)JS ARRAY METHODS & MAP,'+ '\n' + '(15)FILTER');
 //--------(14)JS AARRAY METHODS & MAP---------
-console.log("(14)JS ARRAY METHODS & MAP");
 
 const priceList = [900, 200, 250, 50, 60];
 
@@ -62,6 +63,16 @@ const springSalePrice = productList.map(value => {
 });
 console.log("springSalePrice", springSalePrice);
 
+//--------(15)FILTER---------
+
+const springSalePrice2 = productList.filter(value => {
+  return true;
+  // return value.price <= 10;
+});
+
+console.log("productList", productList);
+console.log("springSalePrice2", springSalePrice2);
+ 
 //--------(13)ASYNC AWAIT---------
 console.log("(13)ASYNC AWAIT");
 
