@@ -11,6 +11,7 @@
   <p><em>Psst: have a look at the JavaScript Console</em>💁</p>
   <h1 id='logo'>Company Logo</h1>
   <button id="new-colors">New Colors</button>
+  <button id="change-text-button">Click</button>
 </div>
 </body>  
 <script>
@@ -22,10 +23,114 @@ document.getElementById("app").appendChild = `
   <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
 </div>
 `;
-//--------(15,16)SHOOPING DISCOUNT PROJECT---------
-console.log('(15, 16)SHOOPING DISCOUNT PROJECT'+ '\n' + '(14)JS ARRAY METHODS & MAP,'+ '\n' + '(15)FILTER');
-//--------(14)JS AARRAY METHODS & MAP---------
+//--------(20)CLASSES---------
+console.log("🔹(20) CLASSES🔹");
 
+class Arcane {
+  constructor(name) {
+    this.name = name
+  }
+}
+class Enchantment extends Arcane {
+  constructor(name) {
+    super(name);
+    this.type = 'Wizard';
+  }
+  comment() {
+    console.log('Wicked!')
+  }
+}
+class Bladesinger extends Arcane {
+  constructor(name) {
+    super(name);
+    this.type = 'Wizard';
+  }
+  singing() {
+    console.log('do le mi fa so la ti do')
+  }
+}
+const ClassOfArcane1 = new Enchantment('School of Enchantment')
+const ClassOfArcane2 = new Bladesinger('School of Bladesinger')
+ClassOfArcane1.comment();
+ClassOfArcane2.singing();
+
+console.log('class of arcane:', ClassOfArcane1, ClassOfArcane2 )
+
+//--------(19)MORE THIS---------
+console.log("🔸(19) MORE THIS🔸");
+const property2 = {
+  name: 'Dangeon and Dragon Character name',
+  characterThree: function() {
+    ['hello1', 'hello2', 'hello3'].map(()=> {
+      console.log(this);
+    })
+  },
+  characterFour: function() {
+    ['hi', 'hello'].map(logGreeting.bind(this));
+  }
+};
+
+const logGreeting = function() {
+  console.log(this);
+  //console.log(this.name)
+}
+
+property2.characterThree();
+property2.characterFour();
+
+//--------(18)THIS---------
+console.log("🔹(18)THIS🔹");
+
+const property = {
+  name: 'Dangeon and Dragon Character name',
+  characterOne: function() {
+    this.name = 'Eliza'
+    console.log('property.characterOne', this.name);
+  },
+  characterTwo: () => {
+    console.log('characterTwo', this); //you can only use this in function() 
+  },
+}
+
+console.log('property', property)
+property.characterOne();
+property.characterTwo();
+
+function Class(name) {
+  this.name = name;
+  console.log(this)
+}
+
+console.log('class', Class);
+Class();
+const wings = new Class('Wizard')
+
+const button = document.getElementById('change-text-button');
+button.addEventListener('click', function() {
+  this.innerText = 'Clicked';
+});
+
+console.log('button', button);
+
+//--------(14-17)CLOTHING STORE PROJECT---------
+console.log('👠(14-17)CLOTHING STORE PROJECT🧸👗'+ '\n' + '· (14)JS ARRAY METHODS & MAP'+ '\n' + '· (15)FILTER,' + '\n' + '· (16)REDUCE' + '\n' + '· (17)OTHER ARRAY METHODS');
+
+// .map
+// iterates over array, perform function on each returns new array
+
+// .filter
+// iteratates over array. determines what is filtered,
+// returns new array
+// returns same or less amount of items in array
+
+// .reduce
+// iterayes over array, uses values, to output one value
+// outputs single value
+
+//.reverse
+
+//--------(14)JS ARRAY METHODS & MAP---------
+console.log("🔸(14)JS ARRAY METHODS & MAP🔸");
 const priceList = [900, 200, 250, 50, 60];
 
 const productList = [
@@ -40,18 +145,21 @@ const productList = [
     type: "round neck icon tshirt"
   },
   {
+    sku: "12333335",
+    price: 100,
+    type: "round neck icon tshirt"
+  },
+  {
     sku: "12111111134",
     price: 300,
     type: "striped shirt dress"
   }
 ];
 
-// .map - iterates over array, perform function on each returns new array
-
 // const springSalePrice = priceList.map(value => {
 //   return value * 0.7;
 // });
-//// To rewrite above the code :
+//// rewrite above the code
 // const springSalePrice = priceList.map(value => value * 0.7);
 // console.log("springSalePrice", springSalePrice);
 
@@ -64,17 +172,44 @@ const springSalePrice = productList.map(value => {
 console.log("springSalePrice", springSalePrice);
 
 //--------(15)FILTER---------
+console.log("🔹(15)FILTER🔹");
+const filterPrice = priceList.filter(value => {
+  // X return true ← there is no true in array
+  return value <= 200;
+});
+// console.log('priceList', priceList);
+console.log('filterPrice', filterPrice);
 
-const springSalePrice2 = productList.filter(value => {
-  return true;
-  // return value.price <= 10;
+const filterType = productList
+  .filter(({ type }) => {
+    return type === "round neck icon tshirt";
+  })
+  .filter(product => {
+    return product.price < 100;
+  })
+  .map(product => ({ ...product, springSalePrice: product.price * .7 }));
+console.log('filterType', filterType);
+
+//--------(16)REDUCE---------
+console.log("🔸(16)REDUCE🔸");
+
+const totalPrice = priceList.reduce(
+  (totalPrice, currentPrice) => {
+    return totalPrice + currentPrice
 });
 
-console.log("productList", productList);
-console.log("springSalePrice2", springSalePrice2);
- 
+console.log('priceList', priceList);
+console.log('totalPrice =', totalPrice);
+
+
+//--------(17)OTHER ARRAY METHODS---------
+console.log("🔹(17)OTHER ARRAY METHODS🔹");
+console.log('priceList', priceList);
+console.log('reversePriceList', [...priceList].reverse());
+console.log('totalPrice = ', totalPrice);
+
 //--------(13)ASYNC AWAIT---------
-console.log("(13)ASYNC AWAIT");
+console.log("🔸(13)ASYNC AWAIT🔸");
 
 //Made up code
 //imported chargedCard
