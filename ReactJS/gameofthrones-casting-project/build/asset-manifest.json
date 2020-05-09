@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.48b70ab0.chunk.css",
+    "main.js": "/static/js/main.ba148e71.chunk.js",
+    "main.js.map": "/static/js/main.ba148e71.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b829c87b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b829c87b.js.map",
+    "static/js/2.b502a0eb.chunk.js": "/static/js/2.b502a0eb.chunk.js",
+    "static/js/2.b502a0eb.chunk.js.map": "/static/js/2.b502a0eb.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f05f7764109dd90ec05db4a034e6f7a6.js": "/precache-manifest.f05f7764109dd90ec05db4a034e6f7a6.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.48b70ab0.chunk.css.map": "/static/css/main.48b70ab0.chunk.css.map",
+    "static/js/2.b502a0eb.chunk.js.LICENSE.txt": "/static/js/2.b502a0eb.chunk.js.LICENSE.txt",
+    "static/media/emilia_clarke.jpg": "/static/media/emilia_clarke.76e49faf.jpg",
+    "static/media/gameofthrones_logo.jpeg": "/static/media/gameofthrones_logo.184960d6.jpeg",
+    "static/media/maisie_williams.jpg": "/static/media/maisie_williams.84f22b1f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b829c87b.js",
+    "static/js/2.b502a0eb.chunk.js",
+    "static/css/main.48b70ab0.chunk.css",
+    "static/js/main.ba148e71.chunk.js"
+  ]
+}
