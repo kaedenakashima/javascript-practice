@@ -1,0 +1,21 @@
+.Sandwich {
+    width: 100%;
+    margin: auto;
+    overflow: scroll;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.comment {
+    font-size: 12px;
+    color: grey;
+    font-weight: lighter;
+    margin-top: 9em;
+}
+
+@media (min-width: 500px) and (min-height: 400px) {
+ .Sandwich {
+    width: 450px;
+    height: 300px;
+ }
+}
