@@ -17,6 +17,12 @@
       <li>Learn to build Build 30 things in 30 days with 30 tutorials.</li>
       <li>You can take the course from <a href="https://javascript30.com/" >here</a></li>
     </ul>
+    <b>my work sample</b>
+    <ul>
+      <li>1. drum kit (<a href=https://codesandbox.io/s/practice01-wq6xy/" >code</a>|<a href="https://wq6xy.csb.app/" >demo</a>)</li>
+      <li>Learn to build Build 30 things in 30 days with 30 tutorials.</li>
+      <li>You can take the course from <a href="https://javascript30.com/" >here</a></li>
+    </ul>
   </li>
 </ul>
   
