@@ -80,11 +80,11 @@
       <ul>
         <li>45 hours tutorial to learn reactJS<br></li>
         <li>Learn how to write code in react, Hooks, Redux, CSSmodule, Style Components, React Routing, Animations, Next.js, and so many other things!<br>
-        Person Manager <a href="https://bit.ly/2RI9i6u">(DEMO)</a><br>
-        Burger App <a href="https://bit.ly/2Pangfo">(DEMO)</a><br>
-        Sandwich App <a href="https://sandwich-maker-4929b.web.app/">(DEMO)</a><br>
-        Post App <a href="https://bit.ly/2RHqkRS">(DEMO)</a><br>
-        Post App2 <a href="https://sl0bb.csb.app/">(DEMO)</a>  
+        Person Manager📘 <a href="https://bit.ly/2RI9i6u">(DEMO)</a><br>
+        Burger App🍔 <a href="https://bit.ly/2Pangfo">(DEMO)</a><br>
+        Sandwich App🥪 <a href="https://sandwich-maker-4929b.web.app/">(DEMO)</a><br>
+        Post App📮 <a href="https://bit.ly/2RHqkRS">(DEMO)</a><br>
+        Post App2📮 <a href="https://sl0bb.csb.app/">(DEMO)</a>  
         </li>
       </ul>
       </li>
