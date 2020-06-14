@@ -1,4 +1,4 @@
-# JavaScript Practice Roadmap
+# My JavaScript Practice Roadmap
 <ul>
   <li>
     <b>Basic JS 🌎</b><br>
