@@ -55,8 +55,10 @@
       <ul>
         <li>36 hours tutorial to learn Gatsby JS<br></li>
         <li>Learn how to write code in React, GraphQL, style Components, gatsby extensions.<br>
-        Vacation Guide (API: Contentful) <a href="#">(my original version DEMO)</a><br>
-        My National Geographic Blog (using mdx) (See my original version => <a href="https://bit.ly/2Ng0pOt">DEMO</a>)<br>
+        Vacation Guide🏄‍ (API: Contentful) <a href="#">(my original version DEMO)</a><br>
+        Icecream Shop🍦(See my original version => <a href="https://bit.ly/3eLHAxr">DEMO</a>)<br>
+        My National Geographic Blog🌋 (using mdx) (See my original version => <a href="https://bit.ly/2Ng0pOt">DEMO</a>)<br>
+        Frontend Web Developer Blog🤓 <a href="https://bit.ly/39fMJgbt">DEMO</a>)<br>
         </li>
       </ul>
       </li>
