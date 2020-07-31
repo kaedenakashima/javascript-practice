@@ -86,9 +86,7 @@
         Sandwich App <a href="https://sandwich-maker-4929b.web.app/">(DEMO)</a><br>
         Burger & Sandwich css objects🍔🥪 <a href="https://codepen.io/kaede_n/pen/WNrOoay">(DEMO)</a><br>
         Post App📮 <a href="https://bit.ly/2RHqkRS">(DEMO)</a><br>
-        Post App2📮 <a href="https://sl0bb.csb.app/">(DEMO)</a><br>  
-        Bonus: IngredientsManager <a href="#">(Coming Soon)</a><br>  
-        Bonus: ProductsManager <a href="#">(Coming Soon)</a><br>  
+        Post App2📮 <a href="https://sl0bb.csb.app/">(DEMO)</a><br>
         </li>
       </ul>
       </li>
