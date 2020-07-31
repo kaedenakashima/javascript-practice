@@ -37,7 +37,7 @@
 <ul>
   <li>
     <b>Node JS </b><br>
-    <b>Filter functions</b>
+    <b>Filter functions(Stock manager)</b>
     <ul>
       <li>
           Filter name, price and type  <a href="https://github.com/kaedenakashima/node-christmas-inventory">see the code</a><br>
